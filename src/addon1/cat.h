@@ -2,14 +2,8 @@
 
 #include <napi.h>
 #include <animal.h>
+#include <fight.h>
 
-class Fight{
-public:
-  static float base;
-  static float calc( int age ) {
-    return base * age +1;
-  }
-};
 
 
 class Cat : public Napi::ObjectWrap<Cat>,
